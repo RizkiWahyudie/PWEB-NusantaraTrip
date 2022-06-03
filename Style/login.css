@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --blue-lev5: rgba(15, 82, 152, 1);
+    --blue-lev4: rgba(37, 101, 174, 1);
+    --blue-lev3: rgba(60, 153, 220, 1);
+    --blue-lev2: rgba(102, 211, 250, 1);
+    --blue-lev1: rgba(213, 243, 254, 1);
+    --black: rgba(41, 41, 41, 1);
+    --abu: rgba(183, 183, 183, 1);
+    --white: #fff;
+}
+
+* {
+    font-family: 'nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.back-home {
+    position: absolute;
+    color: var(--blue-lev4);
+    background-color: var(--blue-lev1);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    top: 2rem;
+    left: 2rem;
+}
+
+.back-home-login {
+    position: absolute;
+    color: var(--blue-lev4);
+    background-color: var(--blue-lev1);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+/* LOGIN */
+
+.Login_side {
+    display: flex;
+    flex-direction: row;
+}
+
+.Login_left,
+.Signup_right {
+    background: var(--blue-lev1);
+}
+
+.form,
+.form-check,
+.Login_btn,
+.Login_form h6,
+.Login_title,
+.Login_desc {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login_img {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Signup_img {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login_title {
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    font-size: 26px;
+}
+
+.Login_form {
+    display: block;
+}
+
+.Login_left,
+.Login_right,
+.Signup_left,
+.Signup_right {
+    width: 100%;
+    min-height: 100vh;
+    flex: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login_desc {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Login_desc h4,
+.Login_desc h1 {
+    font-weight: bold !important;
+    text-transform: capitalize;
+}
+
+.Login_desc h1 {
+    font-size: 30px;
+    color: var(--blue-lev5);
+}
+
+.Login_desc h4 {
+    font-size: 22px;
+    text-align: center;
+    color: var(--blue-lev3);
+}
+
+.form_all {
+    position: relative;
+}
+
+.form_input {
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 10px 50px 10px 20px;
+    outline: none;
+    color: var(--black);
+    font-weight: 500;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+}
+
+.form_input::placeholder {
+    font-size: small;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5500s ease-in-out 0s;
+    -webkit-text-fill-color: rgba(41, 41, 41, 1) !important;
+    -webkit-box-shadow: 0 0 0 50px var(--white) inset;
+}
+
+.my-4 {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.form_eye {
+    font-size: 25px;
+    position: absolute;
+    color: var(--abu);
+    top: 15px;
+    right: 15px;
+}
+
+.form_title {
+    font-size: small !important;
+    font-weight: 600 !important;
+    color: var(--black) !important;
+    background-color: var(--white);
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+
+.form_btn {
+    width: 370px;
+    margin: 1.5rem 0;
+    border: 0;
+    background-color: var(--blue-lev4);
+    color: var(--white);
+    font-size: small;
+    font-weight: bolder;
+    padding: 0.75rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_btn:hover {
+    background-color: var(--blue-lev5);
+}
+
+.form-check label {
+    margin-right: 5rem;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-check a {
+    margin-left: 5rem;
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.form-regis {
+    text-decoration: none;
+    color: var(--blue-lev3);
+}
+
+.form-regis:hover {
+    color: var(--blue-lev5);
+}
+
+@media only screen and (min-width: 935px) {
+    .Signup_left,
+    .Signup_right {
+        padding: 5rem 0;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .Login_side {
+        flex-direction: column;
+    }
+    .Login_left,
+    .Login_right,
+    .Signup_left,
+    .Signup_right {
+        flex: 100%;
+    }
+    .Login_left,
+    .Signup_right {
+        display: none;
+    }
+    .form-check a {
+        margin-left: 1rem;
+    }
+    .form_input::placeholder {
+        font-size: 15px;
+    }
+    .form_eye {
+        top: 13px;
+    }
+    .form_input {
+        width: 200px;
+        height: 40px;
+    }
+    .form_btn {
+        width: 280px;
+    }
+    .back-home-login,
+    .back-home {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .Login_title {
+        font-size: 20px;
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-height: 700px) {
+    .Signup_left,
+    .Signup_right {
+        padding: 3rem 0;
+    }
+}

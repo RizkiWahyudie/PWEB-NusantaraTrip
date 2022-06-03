@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Trip</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Style/card.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/custome.css">
+    <link rel="stylesheet" href="./Style/detail.css">
+    <!-- ICON HEADER -->
+    <link rel="icon" href="./Assets/tour (1).png">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <!-- NAVBAR -->
+            <header class="header" id="header">
+                <nav class="nav">
+                    <div class="nav-left">
+                        <a href="#" class="nav_logo">
+                            <img src="./Assets/tour (1).png" alt="" srcset="">
+                        </a>
+                        <div class="nav_menu" id="nav-menu">
+                            <ul class="nav_list grid">
+                                <li class="nav_item">
+                                    <a href="#home" class="nav_link active-link">
+                                        <i class="uil uil-estate nav_icon"></i> Home
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#popular" class="nav_link">
+                                        <i class="uil uil-user nav_icon"></i> Popular
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#recommand" class="nav_link">
+                                        <i class="uil uil-wrench nav_icon"></i> Covid-19
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#destinasi" class="nav_link">
+                                        <i class="uil uil-file-alt nav_icon"></i> Wisata
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#service" class="nav_link">
+                                        <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#review" class="nav_link">
+                                        <i class="uil uil-message nav_icon"></i> Testimoni
+                                    </a>
+                                </li>
+                                <li class="nav_item nav_btnlogin">
+                                    <div class="nav_login">
+                                        <a href="signin.php">Login</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <i class="uil uil-times nav_close" id="nav-close"></i>
+                        </div>
+                    </div>
+                    <div class="nav_btns">
+                        <a href="signin.php">Login</a>
+                        <div class="nav_toggle" id="nav-toggle">
+                            <i class="uil uil-apps"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- HOME -->
+            <section id="home">
+                <div class="home">
+                    <center>
+                        <h3 class="home_subtitle">Let's Started Destination!</h3>
+                        <span class="home_title">Explore Beatiful Places</span>
+                        <a class="home_btn" href="#destinasi">Get Started <i class="uil uil-location-arrow"></i></a>
+                    </center>
+                </div>
+            </section>
+
+            <!-- POPULAR SEARCH -->
+            <section id="popular">
+                <div class="popular">
+                    <center>
+                        <span class="covid_subtitle">User are looking for this explore</span>
+                        <span class="popular_title">Popular Search</span>
+                    </center>
+                    <div class="popular_search">
+                        <a href="/PopularPage/popular.html" class="popular_btn">Beach</a>
+                        <a href="/PopularPage/popular.html#temple" class="popular_btn">Temple</a>
+                        <a href="/PopularPage/popular.html#mountain" class="popular_btn">Hiking</a>
+                        <a href="/PopularPage/popular.html#waterpark" class="popular_btn">Waterpark</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RECOMMANDATION DESTINATION -->
+            <section id="recommand">
+                <div class="covid" id="covid">
+                    <center>
+                        <span class="covid_subtitle">Covid-free Travel Recommendations</span>
+                        <span class="covid_title">NEW OUR FEATURE DESTINATION</span>
+                    </center>
+                    <div class="covid_content">
+                        <div class="covid_left">
+                            <img src="./Assets/oleleCrop.jpg" alt="">
+                        </div>
+                        <div class="covid_right">
+                            <span class="covid_recommand">The Beautiful View Taman Laut Olele Gorontalo <br>(Sulawesi,
+                                Indonesia)</span>
+                            <span class="covid_desc">Taman Laut Olele salah satu ikon wisata di Gorontalo dengan
+                                pemandangan
+                                bawah laut yang cantiik dengan terumbu karang warna-warni. Wisata bahari ini terletak di
+                                Desa
+                                Olele, Kecamatan Kabila Bone, Gorontalo, Provinsi Gorontalo.
+                                <br><br>Penyebaran Covid-19 di Gorontalo sampai 2 Maret 2022 sebanyak 12.981 kasus,
+                                menjadikan Gorontalo sebagai
+                                Provinsi dengan penyebaran Covid-19 paling sedikit dari 32 Provinsi. <br> <br>
+                                <span>Source: </span><a target="_blank"
+                                    href="https://covid19.go.id/peta-sebaran">covid19.go.id</a>
+                            </span>
+                            <a class="covid_btn" href="">Visited <i class="uil uil-map-pin-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ITEM DESTINASI -->
+            <section id="destinasi" class="destinasi">
+                <div class="card_titlee">
+                    <center>
+                        <span class="card_subtitle">Let's Go explore</span>
+                        <span class="card_title">Top Destination</span>
+                    </center>
+                </div>
+                <div class="body_item">
+                    <div class="wrapperr">
+                        <div class="card_destination">
+                            <img src="./Assets/bali.png" />
+                            <span><strong>Popular</strong> Choice</span>
+                            <div class="infoo">
+                                <h5>Pura Ulun Danu Bratan</h5>
+                                <p><small><small>Dedanau Hotel, Bali</small></small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card_destination">
+                            <img src="./Assets/tangkubanPerahu.jpg" />
+                            <div class="infoo">
+                                <h5>Tangkuban Perahu</h5>
+                                <p><small><small>Bandung</small></small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card_destination">
+                            <img src="./Assets/bromo.png" />
+                            <div class="infoo">
+                                <h5>Gunung Bromo</h5>
+                                <p><small><small>Jawa Timur</small></small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card_destination">
+                            <img src="./Assets/monas.png" />
+                            <div class="infoo">
+                                <h5>Monumen Nasional</h5>
+                                <p><small><small>DKI Jakarta</small></small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE -->
+            <section id="service">
+                <!-- <div class="menu-fitur">
+                    <div class="card_titlee">
+                        <center>
+                            <span class="card_subtitle">Provide for You</span>
+                            <span class="card_title">Services</span>
+                        </center>
+                    </div>
+                    <div class="konten-fitur">
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/travel_insurance.svg" width="120px" height="120px">
+                                <p>Travel Insurance</p>
+                            </div>
+                            <p class="txt-contents">Kami menyediakan asuransi agar perjalanan anda semakin aman.
+                            </p>
+                        </div>
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/medical_care.svg" width="120px" height="120px">
+                                <p>Medical care</p>
+                            </div>
+                            <p class="txt-contents">Mecial Care dapat membantu Anda mengetahui wilayah yang mengalami
+                                dampak Covid-19 terrendah. Sehingga dapat menjadi rekomendasi anda berwisata
+                            </p>
+                        </div>
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/customer.svg" width="120px" height="120px">
+                                <p>Customer care</p>
+                            </div>
+                            <p class="txt-contents">Kami mengedepankan komunikasi dengan customer, karena kepuasan Anda
+                                nomor 1.
+                            </p>
+                        </div>
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/logistic.svg" width="120px" height="120px">
+                                <p>Logistic</p>
+                            </div>
+                            <p class="txt-contents">Kami dapat membantu dalam mengatur logistik yang Anda bawa, siap
+                                antar dan angkut.
+                            </p>
+                        </div>
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/document.svg" width="120px" height="120px">
+                                <p>Travel Documentation</p>
+                            </div>
+                            <p class="txt-contents">Dokumentasi yang baik adalah dokumentasi yang mudah dipersiapkan
+                                oleh pelanggan.
+                            </p>
+                        </div>
+                        <div class="fitur">
+                            <div class="fitur-icon">
+                                <img src="assets/meal.svg" width="120px" height="120px">
+                                <p>Meal Discount</p>
+                            </div>
+                            <p class="txt-contents">Kami menyediakan makanan dengan harga murah dan sehat.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="service" id="covid">
+                    <center>
+                        <span class="covid_subtitle">Our Service</span>
+                        <span class="covid_title">WHY CHOOSE US</span>
+                    </center>
+                    <div class="service_content">
+                        <div class="service_left">
+                            <img src="./Assets/body-checkup.svg" alt="">
+                        </div>
+                        <div class="service_right">
+                            <span class="service_recommand">Travel Insurane</span>
+                            <span class="service_desc">Kami menyediakan asuransi agar selama perjalanan anda semakin
+                                aman & nyaman</span>
+                        </div>
+                    </div>
+                    <div class="service_content">
+                        <div class="service_left order3">
+                            <img src="./Assets/vaccination.svg" alt="">
+                        </div>
+                        <div class="service_right order2">
+                            <span class="service_recommand">Medical Care</span>
+                            <span class="service_desc">Mecial Care dapat membantu Anda mengetahui wilayah yang mengalami
+                                <span class="d-block-sm">dampak Covid-19 terrendah. Sehingga dapat menjadi rekomendasi
+                                    anda berwisata</span></span>
+                        </div>
+                    </div>
+                    <div class="service_content">
+                        <div class="service_left">
+                            <img src="./Assets/pharmacy-store.svg" alt="">
+                        </div>
+                        <div class="service_right">
+                            <span class="service_recommand">Customer Care</span>
+                            <span class="service_desc">Kami mengedepankan komunikasi dengan customer, karena kepuasan
+                                Anda nomor 1.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- REVIEW -->
+            <section id="review">
+                <div class="review">
+                    <div class="card_titlee">
+                        <center>
+                            <span class="card_subtitle">Customer Say's</span>
+                            <span class="card_title">Testimoni Pelanggan</span>
+                        </center>
+                    </div>
+                    <center>
+                        <div class="review_item ">
+                            <div class="review_left mySlides">
+                                <img class="review-img " src="./Assets/images.jpg" alt=" "> <br>
+                                <label class="review_title ">Mr. Jhone</label>
+                                <div class=" ">
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                </div>
+                                <p class="review_subtitle ">
+                                    Aplikasi ini sangat mudah digunakan dan tampilannya juga sangat menarik
+                                </p>
+                            </div>
+                            <div class="review_midle mySlides">
+                                <img class="review-img " src="./Assets/jennifer-lawrence.jpg" alt=" "> <br>
+                                <label class="review_title ">Ny. Jennifer</label>
+                                <div class=" ">
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                </div>
+                                <p class="review_subtitle ">
+                                    Aplikasi ini sangat bagus karena bisa merekomendasikan tempat wisata yang indah dan
+                                    terkini
+                                </p>
+                            </div>
+                            <div class="review_right  mySlides">
+                                <img class="review-img " src="./Assets/team-success-img.jpg" alt=" "> <br>
+                                <label class="review_title ">Ny. Harryn</label>
+                                <div class=" ">
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                </div>
+                                <p class="review_subtitle ">
+                                    The place is very beautiful i will often visit this place again with this app
+                                </p>
+                            </div>
+                            <div class="review_midle mySlides">
+                                <img class="review-img " src="./Assets/jennifer-lawrence.jpg" alt=" "> <br>
+                                <label class="review_title ">Ny. Jennifer</label>
+                                <div class=" ">
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                </div>
+                                <p class="review_subtitle ">
+                                    Karena aplikasi ini, saya jadi tau tempat hotel bagus di dekat tempat wisata populer
+                                    di indonesia</p>
+                            </div>
+                            <div class="review_right  mySlides">
+                                <img class="review-img " src="./Assets/team-success-img.jpg" alt=" "> <br>
+                                <label class="review_title ">Ny. Harryn</label>
+                                <div class=" ">
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                    <i class="bx bxs-star review_icon"></i>
+                                </div>
+                                <p class="review_subtitle ">
+                                    Tempat-tempatnya selalu update dan aplikasinya bagus Aplikasinya mudah digunakan,
+                                    bagus
+                                </p>
+                            </div>
+                        </div>
+                        <button class="review_btnPrev" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="review_btnNext" onclick="plusDivs(1)">&#10095;</button>
+                    </center>
+                </div>
+            </section>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer ">
+            <div class="container ">
+                <div class="footer_item ">
+                    <div class="footer_left ">
+                        <img src="./Assets/tour (1).png" alt="">
+                    </div>
+                    <div class="footer_midle1 ">
+                        <h5 class="text-light ">Navigasi Menu</h5>
+                        <a href="index.html#" class="footer_desc">
+                            <p class="footer_text ">Home</p>
+                        </a>
+                        <a href="index.html#popular" class="footer_desc">
+                            <p class="footer_text ">Popular Search</p>
+                        </a>
+                        <a href="index.html#recommand" class="footer_desc">
+                            <p class="footer_text ">New Feature</p>
+                        </a>
+                        <a href="index.html#destinasi" class="footer_desc">
+                            <p class="footer_text ">Top Destination</p>
+                        </a>
+                    </div>
+                    <div class="footer_midle2 ">
+                        <h5 class="text-light ">Plan Trip</h5>
+                        <a target="_blank"
+                            href="https://www.google.co.id/maps/search/tempat+wisata+bandung/@-6.9034341,107.5731166,12z/data=!3m1!4b1"
+                            class="footer_desc">
+                            <p class="footer_text ">Bandung</p>
+                        </a>
+                        <a target="_blank"
+                            href="https://www.google.co.id/maps/search/tempat+wisata+yogyakarta/@-7.8103872,110.3370389,12z/data=!3m1!4b1"
+                            class="footer_desc">
+                            <p class="footer_text ">Yogyakarta</p>
+                        </a>
+                        <a target="_blank"
+                            href="https://www.google.co.id/maps/search/tempat+wisata+bali/@-8.4875766,114.7511165,10z/data=!3m1!4b1"
+                            class="footer_desc">
+                            <p class="footer_text ">Bali</p>
+                        </a>
+                        <a target="_blank"
+                            href="https://www.google.co.id/maps/search/tempat+wisata+aceh/@4.2648908,95.419864,8z/data=!3m1!4b1"
+                            class="footer_desc">
+                            <p class="footer_text ">Aceh</p>
+                        </a>
+                    </div>
+                    <div class="footer_right ">
+                        <h5 class="text-light ">Contact Us</h5>
+                        <a href=" " class="footer_desc">
+                            <p class="footer_text ">Email : kel3brpl@gmail.com</p>
+                        </a>
+                        <a href=" " class="footer_desc">
+                            <p class="footer_text ">Telp : +62 3456 7890</p>
+                        </a>
+                        <div class="">
+                            <a href="https://www.instagram.com/traveloka/" target="_blank" class="footer_desc">
+                                <i class="uil uil-instagram footer_text"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6289527363619&text=Hello%2C+Saya+mau+booking+hotel&app_absent=0"
+                                target="_blank" class="footer_desc">
+                                <i class="uil uil-whatsapp footer_text"></i>
+                            </a>
+                            <a href="https://www.agoda.com/id-id/?device=c&network=g&adid=578100715837&rand=87709820237095125&expid=&adpos=&aud=kwd-1642406941430&site_id=1891460&tag=add4f21c-9727-432d-af31-4f6ef17064e8&gclid=Cj0KCQjw_4-SBhCgARIsAAlegrVpdJRO8796yAmVSEn4H667vE8H2oHlcP-MH7eRyY7Eqxuwc7fmpZwaAgOFEALw_wcB"
+                                target="_blank" class="footer_desc">
+                                <i class="uil uil-browser footer_text"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detailPage"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="JS/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.click_card').click(function () {
+                var menu = $(this).attr('id');
+                if (menu == "bali") {
+                    $('.main').addClass('d-none');
+                    $('.detailPage').load('/DetailPage/bali.html');
+                } else if (menu == "bandung") {
+                    $('.main').addClass('d-none');
+                    $('.detailPage').load('/DetailPage/bandung.html');
+                } else if (menu == "bromo") {
+                    $('.main').addClass('d-none');
+                    $('.detailPage').load('/DetailPage/bromo.html');
+                } else if (menu == "monas") {
+                    $('.main').addClass('d-none');
+                    $('.detailPage').load('/DetailPage/monas.html');
+                }
+            });
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

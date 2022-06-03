@@ -1,0 +1,76 @@
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 3
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 9
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 75
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 78
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 89
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 117
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 128
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 195
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 196
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 201
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 205
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 373
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 375
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 491
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 496
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 500
+[28-May-2022 16:20:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 718
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 3
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 9
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 75
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 78
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 89
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 117
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 128
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 195
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 196
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 201
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 205
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 373
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 375
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 491
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 496
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 500
+[28-May-2022 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 718
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 3
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 9
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 75
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 78
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 89
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 117
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 128
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 195
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 196
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 201
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 205
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 373
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 375
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 491
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 496
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 500
+[30-May-2022 16:29:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 718
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 3
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 9
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 75
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 78
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 89
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 117
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 128
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 195
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 196
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 201
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 205
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/historyTable.php on line 18
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 373
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Undefined index: username in /home/rovingst/nusantaratrip.app/formBooking.php on line 375
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 491
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 496
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 500
+[02-Jun-2022 20:54:07 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/rovingst/nusantaratrip.app/formBooking.php on line 718

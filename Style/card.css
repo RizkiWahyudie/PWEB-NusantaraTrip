@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+.destinasi {
+    margin: 5rem 0;
+}
+
+
+/* CARD ITEM */
+
+.body_item {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card_title {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--blue-lev5);
+}
+
+.card_titlee {
+    margin: 2rem;
+}
+
+.card_subtitle {
+    color: var(--blue-lev2);
+    display: block;
+}
+
+.card_destination {
+    width: 270px;
+    height: 370px;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.card_destination:hover .infoo {
+    opacity: 1;
+}
+
+.card_destination img {
+    width: 100%;
+    height: 100%;
+    /* mengatasi bagaimana sebuah gambar (atau video) membesar atau mengecilkannya sendiri untuk mengisi box konten */
+    object-fit: cover;
+    /* Nilai absolute memungkinkan untuk menghapus elemen dari wadah div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.card_destination img:hover {
+    transform: scale(1.1);
+}
+
+.card_destination span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF48A5;
+    color: var(--white);
+    padding: 0.45rem 0.6rem;
+    border-radius: 0 0 0 15px;
+    font-size: 14px;
+}
+
+.card_destination .infoo {
+    z-index: 3;
+    color: white;
+}
+
+.card_destination .infoo h5 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.card_destination .infoo p {
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+}
+
+.card_destination .infoo a {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card_destination .infoo a:hover {
+    background: #0275d8;
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    .card_destination {
+        flex: 30%;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .card_destination {
+        flex: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_destination {
+        flex: 50%;
+        height: 170px;
+    }
+}
+
+
+/* CARD POPULAR */
+
+.popular_destination {
+    flex: 35%;
+    height: 370px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.popular_destination::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.popular_destination img {
+    width: 100%;
+    height: 100%;
+    /* mengatasi bagaimana sebuah gambar (atau video) membesar atau mengecilkannya sendiri untuk mengisi box konten */
+    object-fit: cover;
+    /* Nilai absolute memungkinkan untuk menghapus elemen dari wadah div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.popular_destination img:hover {
+    transform: scale(1.1);
+}
+
+.popular_destination .infoo {
+    z-index: 3;
+    color: white;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.popular_destination:hover .infoo {
+    transform: translateY(0px);
+}
+
+.popular_destination .infoo h5 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.popular_destination:hover .infoo h5 {
+    text-decoration: underline;
+}
+
+.popular_destination .infoo p {
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+}
+
+.popular_destination .infoo a {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.popular_destination .infoo a:hover {
+    background: #0275d8;
+    color: white;
+}
+
+.breadcrumb {
+    margin: 2rem 0 0 1rem;
+}
+
+.breadcrumb-home {
+    color: var(--abu);
+}
+
+.breadcrumb-home:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-popular {
+    color: var(--blue-lev5);
+    font-weight: 600;
+}
+
+@media (max-width: 1250px) {
+    .popular_destination {
+        flex: 30%;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .popular_destination {
+        flex: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular_destination {
+        flex: 50%;
+        height: 170px;
+    }
+}

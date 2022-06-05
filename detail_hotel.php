@@ -115,9 +115,9 @@ $result    = mysqli_fetch_array($query);
                         <div class="my-1">
                             <label>Room Type</label>
                             <select name="room_type">
-                                <option value="1">Private Room (1 to 2 people)</option>
-                                <option value="2">Deluxe Room (3 to 6 people)</option>
-                                <option value="3">Party Room (Up to 7 people)</option>
+                                <option value="1">Private Room (1 to 2 people) Rp. <?= $result['priceTypeOne'] ?></option>
+                                <option value="2">Deluxe Room (3 to 6 people) Rp. <?= $result['priceTypeTwo'] ?></option>
+                                <option value="3">Party Room (Up to 7 people) Rp. <?= $result['priceTypeThree'] ?></option>
                             </select>
                         </div>
                         <div class="my-1">

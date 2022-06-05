@@ -316,65 +316,30 @@ if (isset($_POST['creditsubmit'])) {
                             <?php }
                             ?>
                         </div>
-                    </div>
 
-                    <!-- HISTORY -->
-                    </table>
-                    <div class="container-fluid">
-                        <div class="historydown">
-                            <h5>History Booking</h5>
-                            <div class="historyTable">
-                                <?php
-                                include('historyTable.php');
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HISTORY PAGE -->
-                <div class="tradePage d-none">
-                    <div class="container-fluid">
-                        <div class="historydown">
-                            <!-- HISTORY -->
-                            <h5>History Booking</h5>
-                            <div class="historyTable">
-                                <?php
-                                include('historyTable.php');
-                                ?>
-                            </div>
-                        </div>
-
-                        <!-- HISTORY PEMBAYARAN -->
-                        <div class="historydown">
-                            <h5>History Transaksi</h5>
+                        <!-- DAFTAR HOTEL -->
+                        <div class="historydown mb-3">
+                            <h5>Daftar Hotel</h5>
+                            <span style="display:block; margin: -3px 1.5rem 0 1.5rem; font-size: 12px">Menampilkan Daftar Harga Hotel Pertipe</span>
                             <div class="historyTable">
                                 <div class="table-responsive mt-3">
                                     <table class="table header-fixed">
                                         <thead class="historyHead">
                                             <tr class="d-flex historyrow">
-                                                <th class='tableId'>#ID</th>
-                                                <th class='tableHotel'>Status</th>
-                                                <th class='tableUser'>Username</th>
-                                                <!-- <th>Phone</th> -->
-                                                <th class='tableCard'>ID Card</th>
-                                                <th class='tableBooking'>ID Book</th>
-                                                <th class='tableNamaHotel'>Nama Hotel</th>
-                                                <!-- <th class='tableDeparture'></th> -->
-                                                <!-- <th>Jumlah Malam</th> -->
-                                                <th class='tablePrice'>Nominal</th>
-                                                <!-- <th>Email</th> -->
-                                                <!-- <th>ID_Login</th> -->
-                                                <th class='tableWaktu'>Waktu Transaksi</th>
+                                                <th style="width: 5%; justify-content:center;">#NO</th>
+                                                <th style="width: 21%; justify-content:start;">Hotel</th>
+                                                <th style="width: 20%; justify-content:start;">Alamat</th>
+                                                <th style="width: 18%; justify-content:center;">Private Room</th>
+                                                <th style="width: 18%; justify-content:center;">Deluxe Room</th>
+                                                <th style="width: 18%; justify-content:center;">Family Room</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $showbayar = mysqli_query($connect, "SELECT * FROM log_transaksi WHERE namauser='$_SESSION[username]' ORDER BY id_transaksi DESC LIMIT 1");
-                                            $showtransaksi = mysqli_fetch_array($showbayar);
-                                            $tampilbayar = mysqli_query($connect, "SELECT * FROM log_transaksi WHERE namauser='$_SESSION[username]' ORDER BY id_transaksi DESC");
-                                            $tampiltransaksi = mysqli_fetch_array($tampilbayar);
-                                            if ($tampiltransaksi < 1) {
+                                            $datahotel = mysqli_query($connect, "SELECT * FROM hotel");
+                                            $datahotell = mysqli_fetch_array($datahotel);
+                                            $aplus = 0;
+                                            if ($datahotell < 1) {
                                                 echo "
                                                     <td><div><center><img class='invisible' width='300px' src='./Assets/no-results.png' alt=''></center></div></td>
                                                     <td class='historyEmptyy'>
@@ -385,28 +350,15 @@ if (isset($_POST['creditsubmit'])) {
                                                     </td>
                                                 ";
                                             } else {
-                                            ?>
-                                                <tr>
-                                                    <td class="tableId"><?= $showtransaksi['id_transaksi'] ?></td>
-                                                    <td class="tableHotel"><?= $showtransaksi['status'] ?></td>
-                                                    <td class="tableUser"><?= $showtransaksi['namauser'] ?></td>
-                                                    <td class="tableCard"><?= $showtransaksi['nomorkartu'] ?></td>
-                                                    <td class="tableBooking"><?= $showtransaksi['idbooking_transaksi'] ?></td>
-                                                    <td class="tableNamaHotel"><?= $showtransaksi['namahotel_transaksi'] ?></td>
-                                                    <td class="tablePrice">Rp. <?= $showtransaksi['nominal_transaksi'] ?></td>
-                                                    <td class='tableWaktu'><?= $showtransaksi['waktu_transaksi'] ?></td>
-                                                </tr>
-                                            <?php
-                                                while ($tampilbayarr = mysqli_fetch_array($tampilbayar)) {
+                                                $aplus = +1;
+                                                while ($dataahotel = mysqli_fetch_array($datahotel)) {
                                                     echo "<tr>";
-                                                    echo "<td class='tableId'>" . $tampilbayarr['id_transaksi'] . "</td>";
-                                                    echo "<td class='tableHotel'>" . $tampilbayarr['status'] . "</td>";
-                                                    echo "<td class='tableUser'>" . $tampilbayarr['namauser'] . "</td>";
-                                                    echo "<td class='tableCard'>" . $tampilbayarr['nomorkartu'] . "</td>";
-                                                    echo "<td class='tableBooking'>" . $tampilbayarr['idbooking_transaksi'] . "</td>";
-                                                    echo "<td class='tableNamaHotel'>" . $tampilbayarr['namahotel_transaksi'] . "</td>";
-                                                    echo "<td class='tablePrice'>Rp. " . $tampilbayarr['nominal_transaksi'] . "</td>";
-                                                    echo "<td class='tableWaktu'>" . $tampilbayarr['waktu_transaksi'] . "</td>";
+                                                    echo "<td style='width: 5%; justify-content:center;'>" . $aplus++ . "</td>";
+                                                    echo "<td style='width: 21%; justify-content:start;'>" . $dataahotel['namaHotel'] . "</td>";
+                                                    echo "<td style='width: 20%; justify-content:start;'>" . $dataahotel['alamatHotel'] . "</td>";
+                                                    echo "<td style='width: 18%; justify-content:center;'>Rp. " . $dataahotel['priceTypeOne'] . "</td>";
+                                                    echo "<td style='width: 18%; justify-content:center;'>Rp. " . $dataahotel['priceTypeTwo'] . "</td>";
+                                                    echo "<td style='width: 18%; justify-content:center;'>Rp. " . $dataahotel['priceTypeThree'] . "</td>";
                                                     echo "</tr>";
                                                 }
                                             }
@@ -416,6 +368,15 @@ if (isset($_POST['creditsubmit'])) {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- HISTORY PAGE -->
+                <div class="tradePage d-none">
+                    <div class="container-fluid">
+                        <?php
+                        include('historyTable.php');
+                        ?>
                     </div>
                 </div>
 
@@ -697,6 +658,9 @@ if (isset($_POST['creditsubmit'])) {
                                         <p class="footer_text ">Telp : +62 3456 7890</p>
                                     </a>
                                     <div class="">
+                                        <a href="maps.php" class="footer_desc">
+                                            <i class="uil uil-map-marker footer_text"></i>
+                                        </a>
                                         <a href="https://www.instagram.com/traveloka/" target="_blank" class="footer_desc">
                                             <i class="uil uil-instagram footer_text"></i>
                                         </a>

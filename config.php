@@ -3,7 +3,7 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "rovingst_nusantaratrip";
+$db_name = "travel_deploy";
 
 $connect = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 mysqli_select_db($connect, $db_name) or die("Database Tidak Ditemukan");

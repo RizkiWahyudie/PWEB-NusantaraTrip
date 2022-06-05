@@ -1,3 +1,34 @@
+<!-- MEMBUAT KARTU PAYMENT -->
+<div class="detail-book bg-white" style="margin: 0 0 1rem 0">
+    <form action="prosesAddCard.php" method="POST">
+        <div class="detail-form">
+            <div>
+                <label class="mt-2">Nomor Rekening</label>
+                <input required name="nomor_rekening" type="text" placeholder="Rekening harus berjumlah 5 angka">
+            </div>
+            <div class="mt-2">
+                <label class="">Nama</label>
+                <input required name="nama" type="text" placeholder="Nama harus sesuai dengan username">
+            </div>
+        </div>
+        <div class="detail-form">
+            <div class="mt-2">
+                <label class="">Nomor Kartu</label>
+                <input required name="nomor_kartu" type="text" placeholder="No Kartu harus berjumlah 5 angka">
+            </div>
+            <div class="mt-2">
+                <label>Pin Kartu</label>
+                <input required name="pin" type="text" placeholder="Input Password/Pin">
+            </div>
+        </div>
+        <div class="mt-2">
+            <label>Isi Saldo</label>
+            <input required name="saldo" type="text" placeholder="Input Nominal">
+        </div>
+        <input class="submit mt-4" type="submit" value="Add Card Payment" name="addCard" />
+    </form>
+</div>
+
 <!-- DATA YANG TERAKSES SEBAGAI ADMIN -->
 <div class="historydown mb-3">
     <h5>Data User as Admin</h5>
@@ -44,6 +75,85 @@
                             echo "<td style='width: 25%; justify-content:center;'>" . $showadmin['username'] . "</td>";
                             echo "<td style='width: 25%; justify-content:center;'>" . $showadmin['name'] . "</td>";
                             echo "<td style='width: 40%; justify-content:center;'>" . $showadmin['email'] . "</td>";
+                            echo "</tr>";
+                        }
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- DAFTAR BOOKING HOTEL SEMUA -->
+<div class="historydown">
+    <!-- HISTORY -->
+    <?php
+    $booked = mysqli_query($connect, "SELECT * FROM booking ORDER BY id DESC LIMIT 1");
+    $result = mysqli_fetch_array($booked);
+    ?>
+    <h5>History Booking</h5>
+    <div class="historyTable">
+        <div class="table-responsive mt-3">
+            <table class="table header-fixed">
+                <thead class="historyHead">
+                    <tr class="d-flex historyrow">
+                        <th class='tableId'>#ID</th>
+                        <th class='tableHotel'>Hotel</th>
+                        <th class='tableNama'>Nama</th>
+                        <th class='tableRoom'>Type Room</th>
+                        <th class='tableTamu'>Tamu</th>
+                        <th class='tableArrived'>Arrived</th>
+                        <th class='tableDeparture'>Departure</th>
+                        <th class='tablePrice'>Price</th>
+                        <th class='tableAction'>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $record = mysqli_query($connect, "SELECT * FROM booking ORDER BY id DESC");
+                    $row = mysqli_fetch_array($record);
+                    if ($row < 1) {
+                        echo "
+                    <td><div><center><img class='invisible' width='300px' src='./Assets/no-results.png' alt=''></center></div></td>
+                    <td class='historyEmptyy'>
+                        <div class='historyEmpty'>
+                            <img class='' width='250px' src='./Assets/no-results.png' alt=''>
+                            <p>Sorry! Data Empty</p>
+                        </div>
+                    </td>
+                ";
+                    } else {
+                    ?>
+                        <tr>
+                            <td class="tableId"><?= $result['id'] ?></td>
+                            <td class="tableHotel"><?= $result['hotel'] ?></td>
+                            <td class="tableNama"><?= $result['nama'] ?></td>
+                            <td class="tableRoom"><?= $result['room_type'] ?></td>
+                            <td class="tableTamu"><?= $result['tamu'] ?></td>
+                            <td class="tableArrived"><?= $result['arrived'] ?></td>
+                            <td class="tableDeparture"><?= $result['departure'] ?></td>
+                            <td class="tablePrice">Rp. <?= $result['price'] ?></td>
+                            <td class='tableAction'>
+                                <a href='formBooking_delete.php?id=<?= $result['id'] ?>'><i class="uil uil-trash text-white p-1 mx-1 bg-danger rounded-3"> </i> </a>
+                                <a href='formBooking_edit.php?id=<?= $result['id'] ?>'><i class="uil uil-pen text-white p-1 mx-1 bg-success rounded-3"> </i></a>
+                                <a href='bookDetailAll.php?id=<?= $result['id'] ?>'><i class='uil uil-share text-white p-1 mx-1 bg-primary rounded-3'></i></a>
+                            </td>
+                        </tr>
+                    <?php
+                        while ($print = mysqli_fetch_array($record)) {
+                            echo "<tr>";
+                            echo "<td class='tableId'>" . $print['id'] . "</td>";
+                            echo "<td class='tableHotel'>" . $print['hotel'] . "</td>";
+                            echo "<td class='tableNama'>" . $print['nama'] . "</td>";
+                            echo "<td class='tableRoom'>" . $print['room_type'] . "</td>";
+                            echo "<td class='tableTamu'>" . $print['tamu'] . "</td>";
+                            echo "<td class='tableArrived'>" . $print['arrived'] . "</td>";
+                            echo "<td class='tableDeparture'>" . $print['departure'] . "</td>";
+                            echo "<td class='tablePrice'>Rp. " . $print['price'] . "</td>";
+                            echo "<td class='tableAction'><a href='formBooking_delete.php?id=" . $print['id'] . "'><i class='uil uil-trash text-white p-1 mx-1 bg-danger rounded-3'></i> </a>";
+                            echo "<a href='formBooking_edit.php?id=" . $print['id'] . "'><i class='uil uil-pen text-white p-1 mx-1 bg-success rounded-3'></i> </a>";
+                            echo "<a href='bookDetailAll.php?id=" . $print['id'] . "'><i class='uil uil-share text-white p-1 mx-1 bg-primary rounded-3'></i></a></td>";
                             echo "</tr>";
                         }
                     }

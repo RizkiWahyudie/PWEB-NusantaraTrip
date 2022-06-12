@@ -247,7 +247,12 @@ if (isset($_POST['creditsubmit'])) {
                                                 <input type="text" placeholder="ID Booking">
                                             </div>
                                             <div class="creditInput">
-                                                <input type="text" placeholder="Name of hotel">
+                                                <select name="namahotel">
+                                                    <option value="Jiwa Jawa Bromo Hotel">Jiwa Jawa Bromo Hotel</option>
+                                                    <option value="Mercure Jakarta Hotel">Mercure Jakarta Hotel</option>
+                                                    <option value="Dedanau Hotel">Dedanau Hotel</option>
+                                                    <option value="Pesona Bamboe Hotel">Pesona Bamboe Hotel</option>
+                                                </select>
                                             </div>
                                             <div class="creditInput">
                                                 <input type="text" placeholder="Nominal">

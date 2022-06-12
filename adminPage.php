@@ -181,8 +181,8 @@
                 </thead>
                 <tbody>
                     <?php
-                    $showbayar = mysqli_query($connect, "SELECT id_login, floor(sum(price)) AS nominal, sum(jml_malam) AS malam, count(id_login) AS user FROM booking GROUP BY id_login HAVING count(id_login) > 2 ORDER BY sum(price) DESC LIMIT 1");
-                    $showtransaksi = mysqli_fetch_array($showbayar);
+                    // $showbayar = mysqli_query($connect, "SELECT id_login, floor(sum(price)) AS nominal, sum(jml_malam) AS malam, count(id_login) AS user FROM booking GROUP BY id_login HAVING count(id_login) > 2 ORDER BY sum(price) DESC LIMIT 1");
+                    // $showtransaksi = mysqli_fetch_array($showbayar);
                     $tampilbayar = mysqli_query($connect, "SELECT id_login, floor(sum(price)) AS nominal, sum(jml_malam) AS malam, count(id_login) AS user FROM booking GROUP BY id_login HAVING count(id_login) > 2 ORDER BY sum(price) DESC");
                     $tampiltransaksi = mysqli_fetch_array($tampilbayar);
                     if ($tampiltransaksi < 1) {
@@ -197,12 +197,12 @@
                                                 ";
                     } else {
                     ?>
-                        <tr>
+                        <!-- <tr>
                             <td style='width: 10%; justify-content:center;'><?= $showtransaksi['id_login'] ?></td>
                             <td style='width: 25%; justify-content:center;'><?= $showtransaksi['user'] ?>x Booking</td>
                             <td style='width: 25%; justify-content:center;'><?= $showtransaksi['malam'] ?>x Malam</td>
                             <td style='width: 40%; justify-content:center;'>Rp. <?= $showtransaksi['nominal'] ?></td>
-                        </tr>
+                        </tr> -->
                     <?php
                         while ($tampilbayarr = mysqli_fetch_array($tampilbayar)) {
                             echo "<tr>";

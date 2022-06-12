@@ -26,7 +26,8 @@
 <body>
     <!-- halo -->
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoatvCjV_WztUKGOplkDq5p9r-mwFyv_M&callback=GMPStart" async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDyQiuCAYbHmdFdDdWnH7ECKkC8SYIQCQ&callback=GMPStart"></script>
+
     <script type="text/javascript">
         let map;
         let infoWindow;

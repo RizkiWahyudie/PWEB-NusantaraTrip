@@ -21,8 +21,10 @@ if (isset($_POST['book'])) {
     // MEMBUAT SELISIH HARI CHECKIN CHECKOUT
     function SelisihHari($CheckIn, $CheckOut)
     {
+        // Fungsi explode untuk mengubah tanggal menjadi array berdasarkan strip atau pemisahnya
         $CheckInX = explode("-", $CheckIn);
         $CheckOutX =  explode("-", $CheckOut);
+        // melakukan aritmatika dan validasi tanggal : mktime (jam, menit, detik, tanggal, bulan, tahun)
         $_POST['arrived'] =  mktime(0, 0, 0, $CheckInX[1], $CheckInX[2], $CheckInX[0]);
         $_POST['departure'] =  mktime(0, 0, 0, $CheckOutX[1], $CheckOutX[2], $CheckOutX[0]);
         $interval = ($_POST['departure'] - $_POST['arrived']) / (3600 * 24);

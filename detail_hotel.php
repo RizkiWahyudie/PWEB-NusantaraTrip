@@ -100,7 +100,7 @@ $result    = mysqli_fetch_array($query);
                         <input name="id_hotel" type="hidden" value="<?php echo $result['id_hotel'] ?>">
                         <div class="my-1">
                             <label>Hotel</label>
-                            <input required name="hotel" style="text-transform: uppercase;" type="text" value="<?php echo $result['namaHotel'] ?>">
+                            <input required name="hotel" style="text-transform: uppercase;" type="text" readonly value="<?php echo $result['namaHotel'] ?>">
                         </div>
                         <div class="detail-form my-1">
                             <div>

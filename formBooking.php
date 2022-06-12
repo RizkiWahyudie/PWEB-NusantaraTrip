@@ -276,7 +276,7 @@ if (isset($_POST['creditsubmit'])) {
                                             </div>
                                             <div class="creditPin">
                                                 <label class="d-block">Pin</label>
-                                                <span class="d-block"><?= $creditresult['pin'] ?></span>
+                                                <span class="d-block pinClick">*****</span>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +296,12 @@ if (isset($_POST['creditsubmit'])) {
                                                     <input name="idbooking" type="text" placeholder="ID Booking" required>
                                                 </div>
                                                 <div class="creditInput">
-                                                    <input name="namahotel" type="text" placeholder="Name of hotel" required>
+                                                    <select name="namahotel">
+                                                        <option value="Jiwa Jawa Bromo Hotel">Jiwa Jawa Bromo Hotel</option>
+                                                        <option value="Mercure Jakarta Hotel">Mercure Jakarta Hotel</option>
+                                                        <option value="Dedanau Hotel">Dedanau Hotel</option>
+                                                        <option value="Pesona Bamboe Hotel">Pesona Bamboe Hotel</option>
+                                                    </select>
                                                 </div>
                                                 <div class="creditInput">
                                                     <input name="nominal" type="text" placeholder="Nominal" required>
@@ -441,7 +446,7 @@ if (isset($_POST['creditsubmit'])) {
                     </div>
                 </div>
 
-                <!-- FORM SHANGE PASSWORD -->
+                <!-- FORM CHANGE PASSWORD -->
                 <div class="mapKeyPage d-none">
                     <!-- USER PROFILE -->
                     <div class="container-fluid">
@@ -820,6 +825,10 @@ if (isset($_POST['creditsubmit'])) {
                     $('.nav_key').addClass('d-none');
                     $('.nav_coin').addClass('d-none');
                 }
+            });
+
+            $(".pinClick").click(function() {
+                $(this).text($(this).text() == '*****' ? '<?= $creditresult['pin'] ?>' : '*****');
             });
         });
     </script>

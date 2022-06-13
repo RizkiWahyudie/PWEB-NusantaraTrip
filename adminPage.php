@@ -29,6 +29,46 @@
     </form>
 </div>
 
+<!-- Jumlah Admin -->
+<div class="historydown mb-3">
+    <h5>Jumlah Admin</h5>
+    <span style="display:block; margin: -3px 1.5rem 0 1.5rem; font-size: 12px">Menampilkan Jumlah Admin</span>
+    <div class="historyTable">
+        <div class="table-responsive mt-3">
+            <table class="table header-fixed">
+                <thead class="historyHead">
+                    <tr class="d-flex historyrow">
+                        <th style="width: 100%; justify-content:center;">Jumlah Admin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $showadmn = mysqli_query($connect, "SELECT * FROM jmlAdmin");
+                    $showadm = mysqli_fetch_array($showadmn);
+                    if ($showadm < 1) {
+                        echo "
+                                                    <td><div><center><img class='invisible' width='300px' src='./Assets/no-results.png' alt=''></center></div></td>
+                                                    <td class='historyEmptyy'>
+                                                        <div class='historyEmpty'>
+                                                            <img class='' width='250px' src='./Assets/no-results.png' alt=''>
+                                                            <p>Sorry! Data Empty</p>
+                                                        </div>
+                                                    </td>
+                                                ";
+                    } else {
+                    ?>
+                        <tr>
+                            <td style='width: 100%; justify-content:center;'><?= $showadm['jumlahAdmin(1)'] ?></td>
+                        </tr>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 <!-- DATA YANG TERAKSES SEBAGAI ADMIN -->
 <div class="historydown mb-3">
     <h5>Data User as Admin</h5>

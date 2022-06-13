@@ -28,7 +28,7 @@ if (isset($_POST['creditsubmit'])) {
         } else {
             $checkpayment = "CALL payment($idcard, $pin, $nominal, $idbooking, '$namahotel', @pesan)";
             $paymentstatus = mysqli_query($connect, $checkpayment);
-            $pay_error = "Pembayaran Booking Hotel Berhasil!";
+            header('location: bookSuccess.php');
         }
     }
 }
@@ -85,6 +85,8 @@ if (isset($_POST['creditsubmit'])) {
                     <a class="click_menu List_item text-decoration-none my-2 px-3" id="trade"><i class="uil uil-invoice nav_icon me-3"></i><span>History</span></a>
                     <a class="click_menu List_item text-decoration-none my-2 px-3" id="setting"><i class="uil uil-diary nav_icon me-3"></i><span>Booking Now!</span></a>
                     <a class="click_menu List_item text-decoration-none my-2 px-3" id="key"><i class="uil uil-user nav_icon me-3"></i><span>Profile</span></a>
+                    <a href="maps.php" class="click_menu List_item text-decoration-none my-2 px-3"><i class="uil uil-map-marker nav_icon me-3"></i><span>Maps</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B6289527363619&text=Hello%2C+Saya+mau+booking+hotel&app_absent=0" class="click_menu List_item text-decoration-none my-2 px-3"><i class="uil uil-whatsapp nav_icon me-3"></i><span>Call Admin</span></a>
                     <?php
                     if ($callback['admin'] != 0) {
                     ?>
@@ -123,7 +125,6 @@ if (isset($_POST['creditsubmit'])) {
                     </div>
                 </nav>
                 <!-- Page content-->
-
                 <?php
                 $booked = mysqli_query($connect, "SELECT * FROM users, booking, hotel WHERE booking.id_login=users.id_login AND users.username='$_SESSION[username]' AND hotel.id_hotel=booking.id_hotel ORDER BY booking.id DESC LIMIT 1");
                 $result = mysqli_fetch_array($booked);

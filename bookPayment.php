@@ -95,7 +95,7 @@ include("auth.php");
                 <a href="bookSuccess.php">Payment Successful</a>
             </div>
             <div class="pay-wa">
-                <a href="bookPayment.php" target="_blank">Confirm via whatsapp</a>
+                <a href="formBooking.php" >Back to My Payment</a>
             </div>
         </center>
     </div>

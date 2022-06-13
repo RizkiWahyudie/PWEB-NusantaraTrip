@@ -2,6 +2,7 @@
 
 require_once("config.php");
 session_start();
+$err = "";
 
 if (isset($_POST['register'])) {
     function validate($data)
@@ -24,20 +25,20 @@ if (isset($_POST['register'])) {
     $checkUsername = mysqli_query($connect, "SELECT username FROM users WHERE username = '$username'");
     // mysqli_fetch_assoc() digunakan untuk mengambil baris hasil sebagai array asosiatif
     if (mysqli_fetch_assoc($checkUsername)) {
-        header('Location: signup.php?usernameHasAlreadyTaken');
-        return false;
-    }
-    //insert data ke database
-    $query = "INSERT INTO users (username,name,email, password ) VALUES ('$username','$name','$email','$password')";
-    $result = mysqli_query($connect, $query);
-
-    // cek jika berhasil disimpan ke database maka akan dipindah halaman ke login.php
-    if ($result) {
-        $_SESSION['username'] = $username;
-        $_SESSION['email'] = $email;
-        header('Location: signin.php');
+        $err = "Username has already taken!";
     } else {
-        $error =  'Register User Gagal !!';
+        //insert data ke database
+        $query = "INSERT INTO users (username,name,email, password ) VALUES ('$username','$name','$email','$password')";
+        $result = mysqli_query($connect, $query);
+
+        // cek jika berhasil disimpan ke database maka akan dipindah halaman ke login.php
+        if ($result) {
+            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $email;
+            header('Location: signin.php');
+        } else {
+            $error =  'Register User Gagal !!';
+        }
     }
 }
 ?>
@@ -81,6 +82,11 @@ if (isset($_POST['register'])) {
                             <input maxlength="7" type="text" name="username" class="form_input" placeholder="Maximum input username is 7 letters" required>
                             <i class="uil uil-at form_eye"></i>
                         </div>
+                        <?php if ($err) { ?>
+                            <div style="color: red">
+                                <p><?php echo $err ?></p>
+                            </div>
+                        <?php } ?>
                         <div class="form_all my-4">
                             <span class="form_title">Email</span>
                             <input type="email" name="email" class="form_input" placeholder="Ex: nana@gmail.com" required>
